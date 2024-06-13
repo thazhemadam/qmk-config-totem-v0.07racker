@@ -12,6 +12,8 @@ LTO_ENABLE = no
 
 SPLIT_KEYBOARD = yes
 SWAP_HANDS_ENABLE = yes
+SPI_DRIVER_REQUIRED = yes
+SRC += matrix.c
 
 # PIO serial/WS2812 drivers must be used on RP2040
 SERIAL_DRIVER = vendor

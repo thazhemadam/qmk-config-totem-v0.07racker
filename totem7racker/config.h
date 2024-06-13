@@ -25,9 +25,22 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // wiring of each half
 #define MATRIX_ROW_PINS { GP26, GP27, GP28, GP29 }
-#define MATRIX_COL_PINS { GP6, GP7, GP3, GP4, GP2 }
-#define DIODE_DIRECTION COL2ROW
 
+#define SPI_DRIVER SPID1
+#define SPI_SCK_PIN GP8
+#define SPI_MOSI_PIN GP10
+
+#define SPI_LATCH_PIN GP9
+#define SPI_MODE 3
+#define SPI_lsbFirst false
+#define SPI_DIVISOR 8
+
+#define MATRIX_COL_PINS { GP6, GP7, GP3, GP4, GP2 }
+#define COLS { 0x0001, 0x0002, 0x0004, 0x0008, 0x0010 }
+// If you plan to use breakout Cols:
+// #define COLS { 0x0001, 0x0002, 0x0004, 0x0008, 0x0010, 0x0020, 0x0040, 0x0080 }
+
+#define DIODE_DIRECTION COL2ROW
 
 //#define NO_ACTION_MACRO
 //#define NO_ACTION_FUNCTION

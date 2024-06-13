@@ -13,7 +13,7 @@
 
 #include QMK_KEYBOARD_H
 #include <stdio.h>
-#include "totem.h"
+#include "totem7racker.h"
 
 // ┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
 // │ D E F I N I T I O N S                                                                                                  │
